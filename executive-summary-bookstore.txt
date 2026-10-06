@@ -1,0 +1,36 @@
+Assignment name: Bookstore
+Name: Sudip Chaudhary
+UWNetID: sudipc
+
+Assignment Overview:
+The purpose of the Bookstore assignment was to design and implement a modular Java program that simulates an online shopping system.
+The goal was to apply OOP principles such as encapsulation, abstraction, and composition—while managing relationships between classes
+representing store items, item orders, and a customer’s shopping cart. This project focused on the importance of proper class design,
+data validation, and interaction between objects. It also required practicing exception handling and precision with monetary values
+through the BigDecimal class to avoid rounding errors. The scope of this assignment involved building three core
+classes: Item, ItemOrder, and Cart. Together, they form a mini-application that calculates purchase totals,
+supports membership-based bulk discounts, and maintains accurate records of multiple orders.
+
+Technical Impression:
+To complete this assignment, I created three interrelated Java classes following the assignment’s specifications.
+The Item class models store products and supports both regular and bulk pricing. It uses input validation to prevent negative
+values and ensures correctness through the equals, hashCode, and compareTo methods.
+The ItemOrder class connects an item to a quantity and contains logic to compute the total price, factoring in membership
+discounts and bulk pricing using BigDecimal arithmetic. Finally, the Cart class manages a list of ItemOrder objects, handles
+membership status, replaces duplicate orders, and calculates the total cart cost.
+
+One of the biggest challenges was working with BigDecimal, especially when performing arithmetic and rounding to two
+decimal places. It required attention to precision and appropriate rounding modes. Another challenge was ensuring that
+adding a new order replaced an existing order for the same item without duplicating entries.
+
+Unresolved problems in my submission:
+None.
+
+Citations and Collaborations: Copilot was used for minor JavaDoc documentation
+
+Questions:
+In projects that involve handling financial transactions, would it be better practice to implement a dedicated Money
+class to manage precision and currency formatting, rather than relying directly on BigDecimal across multiple classes?
+
+Extra Credit:
+I implemented the optional Comparable interface and an orderByPrice comparator in the Item class for extra credit.
